@@ -3,7 +3,7 @@ import '../styles/App.css';
 
 const App = () => {
   // write your code here 
-  const [count, setCount] = useState("");
+  const [count, setCount] = useState(0);
   useEffect(() => {
     const timer =
       count > 0 && setInterval(() => setCount(count - 1), 1000);
