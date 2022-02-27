@@ -19,7 +19,7 @@ const App = () => {
               console.log("inside keyDown");
               const inp = document.getElementById("timeCount");
               let num = Math.floor(inp.value);
-              if(num < 0 || num.isNaN()) {
+              if(num < 0 || isNaN(num)) {
                 num = 0;
               }
               setCount(num);
